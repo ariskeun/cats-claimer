@@ -8,7 +8,7 @@ class Colors:
     RESET = "\033[0m"   
 
 def read_authorization():
-    with open("jembut.txt", "r") as file:
+    with open("authorization.txt", "r") as file:
         return [line.strip() for line in file if line.strip()]
 
 def get_total_cats(headers):
