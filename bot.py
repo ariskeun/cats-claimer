@@ -35,7 +35,7 @@ def process_tasks(authorization_data):
     total_cats_before, username = get_total_cats(headers)
     print(f"username: {username} - Total CATS: {total_cats_before}")
 
-    url_tasks = "https://api.catshouse.club/tasks/user?group=cats"
+    url_tasks = "https://api.catshouse.club/tasks/user"
     response_tasks = requests.get(url_tasks, headers=headers)
     
     if response_tasks.status_code == 200:
